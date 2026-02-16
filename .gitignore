@@ -1,0 +1,61 @@
+# -------------------
+# 1. Python 编译垃圾
+# -------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -------------------
+# 2. PyCharm/IDE 配置文件 (这个如果不加，别人打开你的项目会报错)
+# -------------------
+.idea/
+.vscode/
+*.swp
+
+# -------------------
+# 3. 虚拟环境 (绝对不能上传！)
+# -------------------
+venv/
+env/
+.venv/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# -------------------
+# 4. Jupyter Notebook 缓存
+# -------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# -------------------
+# 5. AI 数据集 & 模型 (文件太大，GitHub 传不上去)
+# -------------------
+# 忽略数据文件夹
+data/
+datasets/
+
+# 忽略常见的大文件格式
+*.zip
+*.tar.gz
+*.rar
+
+# 忽略训练好的模型权重
+*.pth
+*.pt
+*.h5
+*.ckpt
+*.safetensors
+*.onnx
+
+# -------------------
+# 6. 系统文件
+# -------------------
+.DS_Store
+Thumbs.db
