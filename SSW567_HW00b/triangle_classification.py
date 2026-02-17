@@ -29,19 +29,22 @@ def triangle_classification(a, b, c):
 
     short,mid,long = sorted([a,b,c])
 
-    if short == mid or long == mid:
+    if mid in (short, long):
         shape = 'Isosceles'
     else:
         shape = 'Scalene'
     # Iso scalene Determination: An Isosceles triangle has two sides are equal to each other
 
 
-    if(short * short + mid * mid == long * long):
+    if short * short + mid * mid == long * long :
         shape = 'Right ' + shape
 
     return shape
 
 def main():# pragma: no cover
+    """
+    Main function to handle user interaction for triangle classification.
+    """
     print("Triangle Classification     ")
 
     while True:
