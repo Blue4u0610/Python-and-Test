@@ -41,7 +41,7 @@ def triangle_classification(a, b, c):
 
     return shape
 
-def main():
+def main():# pragma: no cover
     print("Triangle Classification     ")
 
     while True:
@@ -64,5 +64,5 @@ def main():
         else:
             print("The shape of the triangle is " + shape + " triangle")
 
-if __name__ == '__main__':
+if __name__ == '__main__':# pragma: no cover
     main()
